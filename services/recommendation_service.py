@@ -46,7 +46,7 @@ def load_artifacts():
         artifacts['collab'] = pickle.load(f)
     with open('./model_artifacts/content_artifacts.pkl', 'rb') as f:
         artifacts['content'] = pickle.load(f)
-    artifacts['content_sim_matrix'] = np.load('./model_artifacts/tfidf_sim.npy')
+    artifacts['content_sim_matrix'] = np.load('./model_artifacts/tfidf_sim.npy', allow_pickle=True)
     print("All artifacts loaded successfully.")
     return artifacts
 
