@@ -1,0 +1,9 @@
+# Python Virtual Environment
+venv/
+__pycache__/
+
+# OS-specific Files
+.DS_Store
+
+# Model Artifacts (CRITICAL)
+model_artifacts/
